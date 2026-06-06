@@ -60,7 +60,7 @@ button,
 	-webkit-tap-highlight-color: transparent;
 }
 
-@media (pointer: coarse){
+@media (max-width: 768px){
 	*:hover{
 		color:inherit !important;
 		border-color: inherit !important;
