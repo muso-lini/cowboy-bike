@@ -25,4 +25,11 @@ document.addEventListener("click", function(event) {
     }
 });
 
+window.addEventListener("scroll", function(event){
+    if (navMenu.classList.contains("active")){
+        navMenu.classList.remove('active');
+        burgerBtn.classList.remove("active")
+    }
+})
+
 document.addEventListener("touchstart", function() {}, true);
