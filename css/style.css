@@ -425,10 +425,7 @@ main{
     border-color: #000000;
     box-shadow: 2px 3px 4px  #ffffff;
 }
-}
-
-@media(max-width: 768px){
-    .menu__burger{
+.menu__burger{
         display: flex;
     }
     .menu__list{
@@ -456,3 +453,4 @@ main{
     }
 
 }
+
