@@ -59,3 +59,13 @@ button,
 .menu__burger{
 	-webkit-tap-highlight-color: transparent;
 }
+
+@media (any-hover: none){
+	*:hover{
+		color:inherit;
+		border-color: inherit;
+		transform: none;
+		border-color: inherit;
+		transition: none;
+	}
+}
