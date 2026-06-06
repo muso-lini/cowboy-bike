@@ -17,13 +17,14 @@ body{
         background-color 0.2s ease,
         color 0.2s ease,
         box-shadow 0.2s ease;
-    padding-inline: clamp(10px, 1.2vw , 45px);
-    padding-block: clamp(10px, 1vw , 35px);
+    padding-inline: clamp(25px, 1.5vw , 45px);
+    padding-block: clamp(10px, 1.2vw , 35px);
     line-height: clamp(1, 1vw , normal);
     font-size: clamp(10px, 1vw , 32px);
     font-weight: 400;
     border-radius: 260px;
 }
+
 .wrapper {
     overflow: clip;
     min-height: 100%;
@@ -70,9 +71,6 @@ body{
     line-height: clamp(12px, 1vw , 30px);
     font-weight: 400;
 }
-.menu__link:hover{
-    border-bottom-color: #000000;
-}
 .menu__burger{
     display: none;
     flex-direction: column;
@@ -101,61 +99,30 @@ body{
     transform: translateY(-200%);
     transition: transform 0.4s ease-in-out;
 }
-
-@media(max-width: 768px){
-    .menu__burger{
-        display: flex;
-    }
-    .menu__list{
-        display: none;
-    }
-    .menu__list__burger{/*//////////////////////////////////////////////////*/
-        display: flex;
-        flex-direction: column;
-        background-color: rgba(243, 236, 222, 0.98);
-        padding: 20px;
-        z-index: 2;
-        padding-top: clamp(80px, 12vw, 140px);
-    }
-    .menu__link{
-        margin: 15px 0;
-        text-align: center;
-    }
-    .header__menu--container.active {/*//////////////////////////////////////////////////////*/
-        transform: translateY(0);
-    }
-    .header__button {
-    display: flex;
-    margin-right:  clamp(12px, 1vw , 30px);
-    margin-left:  clamp(7px, 1vw , 30px);
-    }
-
-    [class*="__button"]:active{
-        transform: translateY(-3px);
-        opacity: 0.85;
-        transition: 0.4s ease-in-out;
-    }
-    
-}
 .header__button {
     border: 1px solid #000;
-}
-.header__button:hover{
-    background-color: #000000;
-    color: aliceblue;
-    box-shadow: 2px 3px 4px  #ffffff;
+    position: relative;
 }
 .header__button:active{
-    transform: translateY(-3px);
+    transform: scale(0.97);
     background-color: #2b2b2b;
 }
+.header__button:active::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: transparent;
+}
+
 
 
 main{
     flex-grow: 1;
 }
 .hero {
-    /*padding-top: clamp(53px, 7.4vw , 162px);*/
     padding-top: clamp(100px, 7.4vw , 200px);
     min-height: 100svh;
     display: flex;
@@ -174,7 +141,7 @@ main{
 }
 .hero__title {
     font-weight: 600;
-    font-size: clamp(50px, 6.5vw , 128px);
+    font-size: clamp(30px, 5vw, 128px);
     line-height: 110%;
 }
 .hero__title:not(:last-child){
@@ -200,30 +167,18 @@ main{
 .hero__button-left {
     background-color: #fff;
 }
-.hero__button-left:hover{
-    background-color: #000;
-    color: #fff;
-}
+
 .hero__button-right {
     background-color: #000;
     color: white;
 }
-.hero__button-right:hover{
-    background-color: #fff;
-    color: #000;
-}
+
 .hero__image {
     flex-grow: 1;
     flex-basis: 100px;
     align-self: flex-end;
 }
 
-/*
-@media (width <= 630px){
-    .hero{
-        padding-top: 80px;
-    }
-}*/
 @media (width <= 992px){
     .hero__container{
         flex-direction: column;
@@ -291,10 +246,7 @@ main{
 .item-model__button {
     background-color: #f3ecde;
 }
-.item-model__button:hover{
-    background-color: #231e1c;
-    color: #f3ecde;
-}
+
 .item-model__image {
     top: 0;
     left: 0;
@@ -353,10 +305,7 @@ main{
     background-color: #000;
     color: #f3ecde;
 }
-.download__button:hover{
-    background-color: #f3ecde;
-    color: #000;
-}
+
 @media (width >= 768px){
     .download__image{
          max-width: 60%;
@@ -388,25 +337,100 @@ main{
     border: 1px solid #000;
 }
 
+
+
+@media(hover: hover) and (pointer: fine){
+.menu__link:hover{
+    border-bottom-color: #000000;
+}
+.header__button:hover{
+    background-color: #000000;
+    color: aliceblue;
+    box-shadow: 2px 3px 4px  #ffffff;
+}
+.hero__button-left:hover{
+    background-color: #000;
+    color: #fff;
+}
+.hero__button-right:hover{
+    background-color: #fff;
+    color: #000;
+}
+.item-model__button:hover{
+    background-color: #231e1c;
+    color: #f3ecde;
+}
+.download__button:hover{
+    background-color: #f3ecde;
+    color: #000;
+}
 .footer__button:hover{
     background-color: #000000;
     color: aliceblue;
     border-color: #000000;
     box-shadow: 2px 3px 4px  #ffffff;
 }
+}
 
+@media(hover: none) and (pointer: coarse){
+.menu__link:active{
+    border-bottom-color: #000000;
+}
+.header__button:active{
+    background-color: #000000;
+    color: aliceblue;
+    box-shadow: 2px 3px 4px  #ffffff;
+}
+.hero__button-left:active{
+    background-color: #000;
+    color: #fff;
+}
+.hero__button-right:active{
+    background-color: #fff;
+    color: #000;
+}
+.item-model__button:active{
+    background-color: #231e1c;
+    color: #f3ecde;
+}
+.download__button:active{
+    background-color: #f3ecde;
+    color: #000;
+}
+.footer__button:active{
+    background-color: #000000;
+    color: aliceblue;
+    border-color: #000000;
+    box-shadow: 2px 3px 4px  #ffffff;
+}
+}
 
-@media (max-width: 768px){
-	*:hover{
-		color:inherit !important;
-		border-color: inherit !important;
-		transform: none !important;
-		transition: none !important;
-	}
-    .button--trans{
-        border: 1px solid #000;
-        background-color: transparent;
-        color: #000;
-
+@media(max-width: 768px){
+    .menu__burger{
+        display: flex;
     }
+    .menu__list{
+        display: none;
+    }
+    .menu__list__burger{/*//////////////////////////////////////////////////*/
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(243, 236, 222, 0.98);
+        padding: 20px;
+        z-index: 2;
+        padding-top: clamp(80px, 12vw, 140px);
+    }
+    .menu__link{
+        margin: 15px 0;
+        text-align: center;
+    }
+    .header__menu--container.active {/*//////////////////////////////////////////////////////*/
+        transform: translateY(0);
+    }
+    .header__button {
+        display: flex;
+        margin-right:  clamp(12px, 1vw , 30px);
+        margin-left:  clamp(7px, 1vw , 30px);
+    }
+
 }

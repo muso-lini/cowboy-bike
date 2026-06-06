@@ -60,11 +60,11 @@ button,
 	-webkit-tap-highlight-color: transparent;
 }
 
-@media (max-width: 768px){
+/*@media (max-width: 768px){
 	*:hover{
 		color:inherit !important;
 		border-color: inherit !important;
 		transform: none !important;
 		transition: none !important;
 	}
-}
+}*/
