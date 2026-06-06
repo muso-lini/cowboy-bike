@@ -372,7 +372,7 @@ main{
 }
 }
 
-@media(hover: none) and (pointer: coarse){
+@media(max-width: 768px){
 
 .header__button:active{
     background-color: #000000;
