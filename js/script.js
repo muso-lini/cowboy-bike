@@ -22,5 +22,5 @@ document.addEventListener("click", function(event){
         navMenu.classList.remove('active');
     }
 }
-
 )
+document.addEventListener("touchstart", function() {}, true);
