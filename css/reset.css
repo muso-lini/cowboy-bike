@@ -62,9 +62,9 @@ button,
 
 @media (pointer: coarse){
 	*:hover{
-		color:inherit;
-		border-color: inherit;
-		transform: none;
-		transition: none;
+		color:inherit !important;
+		border-color: inherit !important;
+		transform: none !important;
+		transition: none !important;
 	}
 }
