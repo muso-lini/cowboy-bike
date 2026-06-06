@@ -17,8 +17,8 @@ body{
         background-color 0.2s ease,
         color 0.2s ease,
         box-shadow 0.2s ease;
-    padding-inline: clamp(25px, 1.5vw , 45px);
-    padding-block: clamp(10px, 1.2vw , 35px);
+    padding-inline: clamp(28px, 1.7vw , 45px);
+    padding-block: clamp(15px, 1.4vw , 35px);
     line-height: clamp(1, 1vw , normal);
     font-size: clamp(10px, 1vw , 32px);
     font-weight: 400;
@@ -71,6 +71,9 @@ body{
     line-height: clamp(12px, 1vw , 30px);
     font-weight: 400;
 }
+.menu__link:hover{
+    border-bottom-color: #000000;
+}
 .menu__burger{
     display: none;
     flex-direction: column;
@@ -79,17 +82,40 @@ body{
     height: 20px;
     cursor: pointer;
 }
+.menu__burger:active::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: transparent;
+}
 .menu__burger:active{
     transform: translateY(-3px);
 }
 .menu__burger span{
     display: block;
-    height: 3px;
-    width: 100%;
+    height: 2.5px;
+    width: 90%;
     background-color: #1D1D1D;
     border-radius: 10px;
     transition: 0.3s;
 }
+.menu__burger.active span:first-child{
+    transform: translateY(9px) rotate(45deg);
+}
+.menu__burger.active span:nth-child(2){
+    display: none;
+}
+.menu__burger.active span:last-child{
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+
+
+
+
 .header__menu--container{
     position: fixed;
     left: 0;
@@ -337,9 +363,7 @@ main{
     border: 1px solid #000;
 }
 
-.menu__link:hover{
-    border-bottom-color: #000000;
-}
+
 
 @media(hover: hover) and (pointer: fine){
 
