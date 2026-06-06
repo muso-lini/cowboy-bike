@@ -129,11 +129,17 @@ body{
     margin-right:  clamp(12px, 1vw , 30px);
     margin-left:  clamp(7px, 1vw , 30px);
     }
-    
+
     [class*="__button"]:active{
         transform: translateY(-3px);
         opacity: 0.85;
         transition: 0.4s ease-in-out;
+    }
+    .button--trans{
+        border: 1px solid #000;
+        background-color: transparent;
+        color: #000;
+        
     }
 }
 .header__button {
@@ -142,7 +148,6 @@ body{
 .header__button:hover{
     background-color: #000000;
     color: aliceblue;
-    border-color: #000000;
     box-shadow: 2px 3px 4px  #ffffff;
 }
 .header__button:active{
