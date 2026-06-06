@@ -129,6 +129,7 @@ body{
     margin-right:  clamp(12px, 1vw , 30px);
     margin-left:  clamp(7px, 1vw , 30px);
     }
+    
     [class*="__button"]:active{
         transform: translateY(-3px);
         opacity: 0.85;

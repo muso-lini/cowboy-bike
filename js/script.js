@@ -23,4 +23,5 @@ document.addEventListener("click", function(event){
     }
 }
 )
+
 document.addEventListener("touchstart", function() {}, true);
