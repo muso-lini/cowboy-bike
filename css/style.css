@@ -337,12 +337,12 @@ main{
     border: 1px solid #000;
 }
 
-
-
-@media(hover: hover) and (pointer: fine){
 .menu__link:hover{
     border-bottom-color: #000000;
 }
+
+@media(hover: hover) and (pointer: fine){
+
 .header__button:hover{
     background-color: #000000;
     color: aliceblue;
@@ -373,9 +373,7 @@ main{
 }
 
 @media(hover: none) and (pointer: coarse){
-.menu__link:active{
-    border-bottom-color: #000000;
-}
+
 .header__button:active{
     background-color: #000000;
     color: aliceblue;
