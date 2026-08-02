@@ -5,107 +5,258 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>CowBoy</title>
+    <title>Weeb</title>
 </head>
 <body>
     <div class="wrapper">
-        <header class="header">
+        <header>
             <div class="header__container">
-                <div class="header__logo"><img src="img/logo.png" alt="cowboy logo"></div>
-                <nav class="header__menu">
-                    <ul class="menu__list">
-                        <li><a href="#home" class="menu__link">Home</a></li>
-                        <li><a href="#models" class="menu__link">Models</a></li>
-                        <li><a href="#download" class="menu__link">Download</a></li>
-                        <li><a href="#video" class="menu__link">Video</a></li>
-                    </ul>
-                </nav>
-                <a class="header__button button" href="#">Order now</a>
-                <div class="menu__burger" id="burgerBtn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <div class="header__content">
+                    <div class="header__logo">
+                        <a href="#">weeb</a>
+                    </div>
+                    <nav class="header__menu">
+                        <ul class="menu__list">
+                            <li><a href="#" class="menu__link">About Us</a></li>
+                            <li><a href="#" class="menu__link">Solutions</a></li>
+                            <li><a href="#" class="menu__link">Pricing</a></li>
+                            <li><a href="#" class="menu__link">Resources</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__actions">
+                        <a href="#" class="header__button header__button--login">Log in</a>
+                        <a href="#" class="header__button header__button--join">Join Now</a>
+                    </div>
+                    <div class="header__burger" id="burgerBtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    
                 </div>
             </div>
+            <nav class="header__menu__burger" id="navMenu">
+                <ul class="menu__list__burger">
+                    <li><a href="#" class="header__button header__button--login">Log in</a></li>
+                    <li><a href="#" class="menu__link">About Us</a></li>
+                    <li><a href="#" class="menu__link">Solutions</a></li>
+                    <li><a href="#" class="menu__link">Pricing</a></li>
+                    <li><a href="#" class="menu__link">Resources</a></li>
+                </ul>
+            </nav>
         </header>
-        <nav class="header__menu--container" id="navMenu">
-                    <ul class="menu__list__burger">
-                        <li><a href="#home" class="menu__link">Home</a></li>
-                        <li><a href="#models" class="menu__link">Models</a></li>
-                        <li><a href="#download" class="menu__link">Download</a></li>
-                        <li><a href="#video" class="menu__link">Video</a></li>
-                    </ul>
-                </nav>
         <main class="page">
-            <section id="home" class="hero">
+            <section class="hero" id="home">
                 <div class="hero__container">
                     <div class="hero__content">
-                        <h1 class="hero__title">The Future of
-                            Urban Mobility</h1>
-                        <div class="hero__text">
+                        <h1 class="hero__title">Design Faster <span>&</span> Better</h1>
+                        <div class="hero__passage">
                             <p>
-                                Experience the ride of your life with Cowboy’s sleek, smart, and powerful electric bikes designed for urban adventurers.
+                            Sit elit feugiat turpis sed integer integer accumsan turpis. Sed suspendisse nec lorem mauris.
+                            Pharetra, eu imperdiet ipsum ultrices amet, dui sit suspendisse.
                             </p>
                         </div>
-                        <div class="hero__buttons">
-                            <a href="https://www.google.com/" class="hero__button-left button">Explore Models</a>
-                            <a href="#" class="hero__button-right button">Start Your Ride</a>
+                        <div class="hero__actions">
+                            <a class="hero__button hero__button--join" href="#">Join Now</a>
+                            <a class="hero__button hero__button--viev" href="#">View Demo</a>
                         </div>
+                        <img class="hero__image" src="img/hero/image.svg" alt="website structure">
                     </div>
-                    <figure class="hero__image">
-                            <img src="img/hero/image_159.png" alt="image">
-                    </figure>
                 </div>
             </section>
-            <div id="models" class="models">
-                <article class="model__item item-model">
-                    <div class="item-model__content">
-                        <h2 class="item-model__title">Classic</h2>
-                        <div class="item-model__text">
-                            <p>Meet the Classic and you've found one agile ride with an incredibly swift side. Gain serious power on an electric bike that's built around you.</p>
-                        </div>
-                        <a href="#" class="item-model__button button">Start Your Ride</a>
+            <section class="companies">
+                <div class="companies__container">
+                    <div class="companies__content">
+                        <h2 class="companies__title">Join Leading Companies</h2>
+                        <ul class="companies__logos">
+                            <li class="companies__item"><a href="#"><img src="./img/companies/01.svg" alt="SmartFinder logo"></a></li>
+                            <li class="companies__item"><a href="#"><img src="./img/companies/02.svg" alt="Zoomerr logo"></a></li>
+                            <li class="companies__item"><a href="#"><img src="./img/companies/03.svg" alt="Shells logo"></a></li>
+                            <li class="companies__item"><a href="#"><img src="./img/companies/04.svg" alt="Waves logo"></a></li>
+                            <li class="companies__item"><a href="#"><img src="./img/companies/05.svg" alt="ArtVenue"></a></li>
+                        </ul>
                     </div>
-                    <img src="img/models/dark.webp" alt="Model" class="item-model__image">
-                </article>
-                <article class="model__item item-model">
-                    <div class="item-model__content">
-                        <h2 class="item-model__title">Cruiser</h2>
-                        <div class="item-model__text">
-                            <p>Meet the Cruiser for an elevated take on the classic Cowboy. A higher vantage gives you a comfortable advantage with an electric bike that's built around you.</p>
-                        </div>
-                        <a href="#" class="item-model__button button">Start Your Ride</a>
-                    </div>
-                    <img src="img/models/lite.webp" alt="Model" class="item-model__image">
-                </article>
-            </div>
-            <section id="download" class="download">
-                <div class="download__container">
-                    <div class="download__content">
-                        <h3 class="download__title">Your Ride, Your Way — Powered by the Cowboy App</h3>
-                        <div class="download__text">
-                            <p>Unlock the full potential of your Cruiser & Classic bike with seamless app integration.</p>
-                        </div>
-                        <a href="#" class="download__button button button--dark">Download App</a>
-                    </div>
-                    <img src="img/download/image.webp" alt="Download" class="download__image">
                 </div>
             </section>
-            <div id="video" class="video">
-                <iframe class="video__item" src="https://www.youtube.com/embed/5JsX5gyK3QQ?si=yAJxRbu9szgdhg0x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
+            <article class="discover">
+                <div class="discover__container">
+                    <div class="discover__image">
+                        <img src="./img/discover/image.svg" alt="Discover ilustration" class="discover__image__item">
+                    </div>
+                    <div class="discover__content">
+                        <p class="discover__eyebrow">DISCOVER</p>
+                        <h2 class="discover__title"><span>Unlimited</span> <span>ideas</span> for your next great projects</h2>
+                        <p class="discover__text">Scelerisque auctor dolor diam tortor, fames faucibus non interdum nunc. Ultrices nibh sapien elit gravida ac, rutrum molestie adipiscing lacinia.</p>
+                        <a href="#" class="discover__url">Discover Ideas <img src="./img/icons/arrow.svg" alt="arrow"></a>
+                    </div>
+                </div>
+            </article>
+            <article class="powerful">
+                <div class="powerful__container">
+                    <div class="powerful__image">
+                        <img src="./img/powerful/image.svg" alt="Discover ilustration" class="powerful__image__item">
+                    </div>
+                    <div class="powerful__content">
+                        <p class="powerful__eyebrow">POWERFUL</p>
+                        <h2 class="powerful__title">All the tools you can imagine</h2>
+                        <p class="powerful__text">Scelerisque auctor dolor diam tortor, fames faucibus non interdum nunc. Ultrices nibh sapien elit gravida ac, rutrum molestie adipiscing lacinia.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="customers">
+                <div class="customers__container">
+                    <div class="customers__image">
+                        <img src="./img/customers/image.svg" alt="Discover ilustration" class="customers__image__item">
+                    </div>
+                    <div class="customers__content">
+                        <p class="customers__eyebrow">CUSTOMERS</p>
+                        <h2 class="customers__title"><span>Target</span> <span>customers</span> with our powerful AI kit</h2>
+                        <p class="customers__text">Scelerisque auctor dolor diam tortor, fames faucibus non interdum nunc. <br>Ultrices nibh sapien elit gravida ac, rutrum molestie adipiscing lacinia.</p>
+                        <a href="#" class="customers__url">How Targeting Customers Works <img src="./img/icons/arrow.svg" alt="arrow"></a>
+                    </div>
+                </div>
+            </article>
+            <article class="speed">
+                <div class="speed__container">
+                    <div class="speed__image">
+                        <img src="./img/speed/image.svg" alt="Speed ilustration" class="speed__image__item">
+                    </div>
+                    <div class="speed__content">
+                        <p class="speed__eyebrow">SPEED</p>
+                        <h2 class="speed__title">Work fast, w/o interruptions</h2>
+                        <p class="speed__text">Scelerisque auctor dolor diam tortor, fames faucibus non interdum nunc. Ultrices nibh sapien elit gravida ac, rutrum molestie adipiscing lacinia.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="testimonials">
+                <div class="testimonials__container">
+                    <div class="testimonials__content">
+                        <div class="testimonials__content--left">
+                            <p class="testimonials__eyebrow">TESTIMONIALS</p>
+                            <h2 class="testimonials__title">Bigapp got to the next level</h2>
+                            <a href="#" class="testimonials__url">View Case Study<img src="./img/icons/arrow.svg" alt="arrow"></a>
+                        </div>
+                        <div class="testimonials__content--centre">
+                            <img src="./img/testimonials/image.svg" alt="testimonials ilustration">
+                        </div>
+                        <div class="testimonials__content--right">
+                            <p class="testimonials__text">“Viverra viverra nibh enim et aliquam, enim. Tempor, sit mus viverra orci dui consequat turpis scelerisque faucibus.”</p>
+                            <figure class="testimonials__creator">
+                                <img src="./img/testimonials/avatar.jpg" alt="Rwanda Melflor" class="testimonials__creator__avatar">
+                                <div class="testimonials__creator__informations">
+                                    <p class="testimonials__creator__name">Rwanda Melflor</p>
+                                    <p class="testimonials__creator__rank">Co-founder Bigapp</p>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="events">
+                <div class="events__container">
+                    <div class="events__head">
+                        <h2 class="events__title">Design events near you</h2>
+                        <a href="#" class="events__url url--purple">Explore Events<img src="./img/icons/arrow-purpule.svg" alt="arrow"></a>
+                    </div>
+                    <div class="events__content">
+                        <div class="events__horse">
+                            <p class="events__horse__imagetitle">Design Thinking</p>
+                            <img src="./img/events/01.jpg" alt="" class="events__horse__image">
+                            <p class="events__horse__eyebrow">Design Thinking</p>
+                            <h3 class="events__horse__title">Wild Horse Event</h3>
+                            <a href="#" class="events__horse__url url--purple">Buy Tickets <img src="./img/icons/arrow-purpule.svg" alt="purple arrow"></a>
+                        </div>
+                        <div class="events__festival">
+                            <p class="events__festival__imagetitle">Festival</p>
+                            <img src="./img/events/02.jpg" alt="" class="events__festival__image">
+                            <p class="events__festival__eyebrow">Festival</p>
+                            <h3 class="events__festival__title">Music & Colors</h3>
+                            <a href="#" class="events__horse__url url--purple">Buy Tickets <img src="./img/icons/arrow-purpule.svg" alt="purple arrow"></a>
+                        </div>
+                        <div class="events__bootcamp">
+                            <p class="events__bootcamp__imagetitle">Bootcamp</p>
+                            <img src="./img/events/03.jpg" alt="" class="events__bootcamp__image">
+                            <p class="events__bootcamp__eyebrow">Bootcamp</p>
+                            <h3 class="events__bootcamp__title">Happy Father’s Day</h3>
+                            <a href="#" class="events__horse__url url--purple">Buy Tickets <img src="./img/icons/arrow-purpule.svg" alt="purple arrow"></a> 
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="sitemap">
+                <div class="sitemap__container">
+                    <div class="sitemap__content">
+                        <div class="sitemap__logo">
+                            <a href="#">weeb</a>
+                        </div>
+                        <div class="sitemap__product">
+                            <h4 class="sitemap__product__caption">Product</h4>
+                            <ul class="sitemap__product__menu">
+                                <li><a href="#" class="sitemap__product__menu__label">Pricing</a></li>
+                                <li><a href="#" class="sitemap__product__menu__label">Overview</a></li>
+                                <li><a href="#" class="sitemap__product__menu__label">Browse</a></li>
+                                <li><a href="#" class="sitemap__product__menu__label">Accessibility</a></li>
+                                <li><a href="#" class="sitemap__product__menu__label">Five</a></li>
+                            </ul>
+                        </div>
+                        <div class="sitemap__solutions">
+                            <h4 class="sitemap__solutions__caption">Solutions</h4>
+                            <ul class="sitemap__solutions__menu">
+                                <li><a href="#" class="sitemap__solutions__menu__label">Brainstorming</a></li>
+                                <li><a href="#" class="sitemap__solutions__menu__label">Ideation</a></li>
+                                <li><a href="#" class="sitemap__solutions__menu__label">Wireframing</a></li>
+                                <li><a href="#" class="sitemap__solutions__menu__label">Research</a></li>
+                            </ul>
+                        </div>
+                        <div class="sitemap__resources">
+                            <h4 class="sitemap__resources__caption">Resources</h4>
+                            <ul class="sitemap__resources__menu">
+                                <li><a href="#" class="sitemap__resources__menu__label">Help Center</a></li>
+                                <li><a href="#" class="sitemap__resources__menu__label">Blog</a></li>
+                                <li><a href="#" class="sitemap__resources__menu__label">Tutorials</a></li>
+                            </ul>
+                        </div>
+                        <div class="sitemap__company">
+                            <h4 class="sitemap__company__caption">Company</h4>
+                            <ul class="sitemap__company__menu">
+                                <li><a href="#" class="sitemap__company__menu__label">About</a></li>
+                                <li><a href="#" class="sitemap__company__menu__label">Press</a></li>
+                                <li><a href="#" class="sitemap__company__menu__label">Events</a></li>
+                                <li><a href="#" class="sitemap__company__menu__label">Careers</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
         </main>
         <footer class="footer">
             <div class="footer__container">
-                <img class="footer__logo" src="img/logo.png" alt="logo">
-                <a href="#home" class="footer__button">Up</a>
+                <div class="footer__content">
+                    <p class="footer__text">
+                        @ 2023 Weeb, Inc. All rights reserved.
+                    </p>
+                    <div class="footer__actions">
+                        <a href="#" class="footer__actions__item"><img src="./img/icons/yt.svg" alt=""></a>
+                        <a href="#" class="footer__actions__item"><img src="./img/icons/fb.svg" alt=""></a>
+                        <a href="#" class="footer__actions__item"><img src="./img/icons/tw.svg" alt=""></a>
+                        <a href="#" class="footer__actions__item"><img src="./img/icons/insta.svg" alt=""></a>
+                        <a href="#" class="footer__actions__item"><img src="./img/icons/linkdin.svg" alt=""></a>
+                    </div>
+                </div>
             </div>
         </footer>
     </div>
+
+
+
+
+
+
+
+
     <script src="js/script.js"></script>
 </body>
 </html>
-
