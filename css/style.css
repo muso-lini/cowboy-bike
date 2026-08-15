@@ -3,9 +3,12 @@ html{
 }
 body{
     font-family: "Roboto", sans-serif;
-    background-color: #0F172A;
+    background-color: var(--background-color);
     color: #fff;
     font-size: 16px;
+}
+:root{
+    --background-color: #0F172A;
 }
 .wrapper {
     overflow: clip;
@@ -13,7 +16,7 @@ body{
     display: flex;
     flex-direction: column;
 }
-[class*="__container"]{
+.container{
     width: 100%;
     max-width: 1280px;
     margin-inline: auto;
@@ -35,8 +38,8 @@ body{
 }
 [class*="__eyebrow"]{
     font-weight: 700;
-    font-size: 20px;
     line-height: 100%;
+    font-size: 20px;
     letter-spacing: 0.15em;
     padding-bottom: 16px;
     text-transform: uppercase;
@@ -63,6 +66,10 @@ body{
 [class*="--join"]{
     background-color: #9333EA;
 }
+.imagetitle{
+    font-size: 8px;
+}
+
 
 
 
@@ -528,7 +535,7 @@ header {
 }
 .events{
     background-color: #fff;
-    color: #0F172A;
+    color: var(--background-color);
 }
 .events__container {
     display: flex;
@@ -536,13 +543,13 @@ header {
     align-items: center;
     padding-top: clamp(48px, 5vw, 80px);
 }
-[class*="imagetitle"]{
+.imagetitle{
     line-height: 140%;
     color: #6B21A8;
     background-color: #F3E8FF;
     padding-inline: 8px;
     padding-block: 2px;
-    font-size: 14px;
+    font-size: 20px;
     border-radius: 4px;
     position: absolute;
     z-index: 15;
@@ -556,6 +563,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 100%;
 }
 .events__title {
     text-align: center;
@@ -563,9 +571,7 @@ header {
 }
 .events__url {
 }
-.events__content {
-    padding-bottom: clamp(78px, 9vw, 92px);
-}
+
 .events__content img{
     padding-block: 24px;
 }
@@ -580,7 +586,6 @@ header {
 }
 .events__horse__eyebrow {
     padding-bottom: 4px;
-    font-size: 16px;
 }
 .events__horse__title {
 }
@@ -620,7 +625,7 @@ header {
 .sitemap__container {
 }
 .sitemap__content {
-    color: #0F172A;
+    color: var(--background-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -648,13 +653,18 @@ header {
     padding-block: 12.5px;
 
 }
+[class*="__label"]:hover{
+    line-height: 140%;
+    padding-block: 12.5px;
+    text-decoration: underline;
+}
 .sitemap__product {
 }
 .sitemap__product__caption {
 }
 .sitemap__product__menu {
 }
-.sitemap__product__menu__label {
+.sitemap__product__menu__label:hover{
 }
 .sitemap__solutions {
 }
@@ -686,7 +696,7 @@ header {
 
 .footer{
     background-color: #fff;
-    color: #0F172A;
+    color: var(--background-color);
 }
 .footer__container {
 }
@@ -709,6 +719,46 @@ header {
 
 /*//////////////////////////////////////////////////////////////////////////////////////*/
 
+
+    .events__content {
+    padding-bottom: clamp(78px, 9vw, 92px);
+}
+.events__actions {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    gap: clamp(10px, 7vw, 30px);
+    padding-block: clamp(15px, 7vw, 24px);
+}
+.filter__button {
+    background-color: #9333EA;
+    color: #fff;
+    border: 3px solid transparent;
+
+}
+.filter__active{
+    background-color: #BE185D;
+    color: #ffffff;
+}
+.filter__button:hover{
+    background-color: #581C87;
+    color: #fff;
+    text-decoration: underline;
+    border-color: #020071;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.events__card {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
 
 
 @media (min-width: 768px){
@@ -819,8 +869,9 @@ header {
 
 
     /*//////////////////////////////////////////////////////////////////////////////////////*/
-
-
+    .imagetitle{
+        font-size: clamp(15px, 1.5vw, 20px);
+    }
     .testimonials__content {
         flex-direction: row;
         flex-wrap: nowrap;
@@ -835,11 +886,24 @@ header {
     /*//////////////////////////////////////////////////////////////////////////////////////*/
 
 
+
     .events__content {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
         flex-direction: row;
         gap: 24px;
-    }
+}
+.events__card {
+    max-width: 30%;
+    min-width: 220px;
+}
+
+.events__actions {
+    flex-direction: row;
+    justify-content: center;
+}
 
 
     /*//////////////////////////////////////////////////////////////////////////////////////*/
@@ -870,3 +934,5 @@ header {
         padding: 0 0 0;
     }
 }
+
+

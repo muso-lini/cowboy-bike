@@ -1,0 +1,38 @@
+[
+    {
+        "type": "Activities",
+        "category": "Design Thinking",
+        "title": "Wild Horse Event",
+        "image": "./img/events/01.jpg"
+    },
+    {
+        "type": "Music",
+        "category": "Festival",
+        "title": "Music & Colors",
+        "image": "./img/events/02.jpg"
+    },
+    {
+        "type": "Activities",
+        "category": "Bootcamp",
+        "title": "Happy Father’s Day",
+        "image": "./img/events/03.jpg"
+    },
+    {
+        "type": "Music",
+        "category": "Party",
+        "title": "Corporate Party",
+        "image": "./img/events/04.jpg"
+    },
+    {
+        "type": "Activities",
+        "category": "Design Thinking",
+        "title": "Wild Horse Event",
+        "image": "./img/events/01.jpg"
+    },
+    {
+        "type": "Music",
+        "category": "Festival",
+        "title": "Music & Colors",
+        "image": "./img/events/02.jpg"
+    }
+]
