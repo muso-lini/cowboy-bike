@@ -55,7 +55,7 @@ let events = [];
     }
 
     async function loadEvents() {
-        const response = await fetch("./data/events.json");
+        const response = await fetch("./weeeb/data/events.json");
         events = await response.json();
         renderCards(events);
     }
